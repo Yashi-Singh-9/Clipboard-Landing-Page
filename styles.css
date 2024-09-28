@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary Colors */
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+
+    /* Neutral Colors */
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+header {
+    padding: 30px 70px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('./images/bg-header-desktop.png');
+    background-size: cover;
+}
+
+header img {
+    margin-top: 45px;
+}
+
+.intro {
+    text-align: center;
+    padding: 30px 0;
+    width: 45%;
+}
+
+.intro h2 {
+    font-size: 2.03em;
+    padding: 5px 0;
+}
+
+.intro h2,
+.snip h3,
+.feature h3,
+.access h3,
+.function h3,
+.clipboard h3{
+    color: var(--dark-grayish-blue);
+}
+
+.guide,
+.snip span,
+.feature .description,
+.access span,
+.work span,
+.function span,
+.clipboard span{
+    color: var(--grayish-blue);
+}
+
+.guide {
+    margin-top: 10px;
+    display: block;
+}
+
+.buttons {
+    padding: 40px 0;
+}
+
+.buttons .btn {
+    padding: 15px 25px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    margin: 0 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.buttons .btn.ios {
+    background-color: var(--strong-cyan);
+    box-shadow: 0 4px 6px rgba(0, 128, 128, 0.8), 0 1px 3px rgba(0, 128, 128, 0.5);
+    transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttons .btn.ios:hover {
+    opacity: 0.8; 
+    box-shadow: 0 4px 6px rgba(0, 128, 128, 0.5), 0 1px 3px rgba(0, 128, 128, 0.3); 
+}
+
+.buttons .btn.mac {
+    background-color: var(--light-blue);
+    box-shadow: 0 4px 6px rgba(59, 82, 255, 0.8), 0 1px 3px rgba(59, 82, 255, 0.5);
+    transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttons .btn.mac:hover {
+    opacity: 0.8; 
+    box-shadow: 0 4px 6px rgba(59, 82, 255, 0.5), 0 1px 3px rgba(59, 82, 255, 0.3); 
+}
+
+.snip {
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+.snip h3, .access h3, .clipboard h3 {
+    font-size: 1.8em;
+    padding: 15px 0;
+}
+
+.snip span {
+    line-height: 1.7;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 50px 0;
+}
+
+.features img {
+    height: 100%;
+    width: 80%;
+}
+
+.features .feature div {
+    margin-top: 40px;
+    width: 65%;
+}
+
+.feature div .description {
+    margin-top: 15px;
+    display: block;
+    width: 75%;
+}
+
+.access {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.access img {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.access div:first-child {
+    padding: 70px 0;
+    width: 65%;
+    margin: auto;
+}
+
+.access div span {
+    position: relative;
+    top: 8px;
+    line-height: 1.5;
+}
+
+.functions .function {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.functions .function div {
+    width: 26%;
+    margin: 0 30px;
+}
+
+.functions .function div img {
+    margin: 10px 0 20px 0;
+}
+
+.function h3 {
+    margin-top: 15px;
+}
+
+.function span {
+    width: 96%;
+    display: block;
+    margin-top: 15px;
+}
+
+.functions .company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    margin: 50px 30px;
+}
+
+.clipboard {
+    text-align: center;
+    width: 46%;
+    margin: auto;
+}
+
+.clipboard h3 {
+    margin-top: 100px;
+}
+
+.clipboard span {
+    margin-top: 20px;
+    display: flex;
+}
+
+.clipboard .buttons{
+    margin-bottom: 120px;
+}
+
+footer{
+    background-color: #F5F6F8;
+    padding: 2.7em 0;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo{
+    flex: 0 0 18%;
+}
+
+.social-icons{
+    flex : 0 0 14%;
+}
+
+.footer-logo img{
+    width: 60px;
+    position: relative;
+    left: 100px;
+}
+
+.footer-menu{
+    flex:1;
+    display: flex;
+}
+
+.f-menu{
+    width: 20%;
+}
+
+.f-menu a{
+    display: block;
+    line-height: 2em;
+    text-decoration: none;
+    color: #000;
+}
+
+.social-icons a{
+    display: block;
+    float: right;
+    width: 33.33%;
+    position: relative;
+    left: -130px;
+}
+
+.social-icons a img {
+    transition: 0.3s;
+}
+
+.social-icons a img:hover {
+    filter: brightness(0) saturate(100%) invert(60%) sepia(79%) saturate(668%) hue-rotate(112deg) brightness(95%) contrast(91%);
+}
+
+.f-menu a:hover{
+    color:var(--strong-cyan);
+}
+
+.attribution {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    font-size: 14px;
+    position: relative;
+    top: 30px;
+}
+
+@media (max-width: 920px) {
+    .intro {
+        width: 80%;
+    }
+
+    .snip{
+        width: 75%;
+    }
+    
+    .features img {
+        width: 100%;
+    }
+
+    .features .feature div {
+        width: 80%;
+        margin-left: 100px;
+    }
+
+    .functions .company {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .clipboard h3 {
+        width: 460px;
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+        flex: 0 0 25%;
+    }
+
+    .f-menu {
+        width: 30%;
+    }
+
+    .social-icons a {
+        left: -10px;
+    }
+}
+
+@media (max-width: 765px){
+    header {
+        background: url('./images/bg-header-mobile.png');
+        background-size: cover;
+        padding: 40px 10px ;
+    }
+    .features {
+        width: 100%;
+    }
+
+    .snip {
+        width: 80%;
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .access div:first-child {
+        width: 75%;
+    }
+
+    .features .feature div {
+        width: 76%;
+        margin: 60px 12%  auto;
+        text-align: center;
+    }
+
+    .feature div .description {
+        width: 100%;
+    }
+    
+    .functions .function {
+        display: grid;
+    }
+
+    .functions .function div {
+        width: 85%;
+    }
+
+    .functions .company {
+        display: grid;
+        grid-gap: 4em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clipboard {
+        width: 84%;
+    }
+
+    .function span {
+        margin: 30px auto;
+    }
+
+    .buttons {
+        display: grid;
+        justify-content: center;
+    }
+
+    .buttons .btn{
+        margin: 10px 0;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer-logo img {        
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    ul li {
+        display: grid;
+        margin: 20px 0;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        width: 80%;
+        gap: 20px;
+    }
+
+    .social-icons a {
+        margin: 10px;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        display: flex;
+        gap: 10px;
+        margin: 40px auto;
+    }
+}
