@@ -43,7 +43,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Clipboard Landing Page Solution](https://gitlab.com/Yashi-Singh-9/clipboard-landing-page.git)
+- Solution URL: [Clipboard Landing Page Solution](https://www.frontendmentor.io/solutions/clipboard-landing-page-rEzf-FOP-R)
 - Live Site URL: [Live Clipboard Landing Page](https://clipboard-landing-page-by-yashi.netlify.app)  
 
 ## My process
